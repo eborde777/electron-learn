@@ -24,7 +24,6 @@ $('form').submit(function (event) {
       }
       else{
         console.log(res);
-        // $('#result').text(res)
         $('ul').append("<li>"+res+"</li>")
       }
   });
@@ -39,7 +38,6 @@ $('#bxt').click(function (event) {
       }
       else{
         ConvertToTable(res);
-      // $('ul').append("<li>"+res+"</li>")
       }
   });
 });
