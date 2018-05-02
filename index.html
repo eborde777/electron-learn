@@ -1,0 +1,55 @@
+<html>
+<head>
+  <title>Hello there</title>
+  <style>
+  table {
+font-family: arial, sans-serif;
+border-collapse: collapse;
+width: 100%;
+margin-top:10px;
+}
+
+td,
+th {
+border: 1px solid #dddddd;
+text-align: left;
+padding: 8px;
+}
+
+th {
+background-color: #ccd;
+}
+
+tr:nth-child(even) {
+background-color: #ecf6fc;
+}
+
+tr:nth-child(odd) {
+background-color: #ddeedd;
+}
+  </style>
+</head>
+<body>
+  <h1>Hello Guys</h1>
+  <form id='formss'>
+    <input type="text" id='item1' autofocus />
+    <input type="text" id='item2' />
+    <button id='btn' type="submit">Send</button>
+  </form>
+  <button type="button" id="bxt">Show</button>
+  <div id="result">
+    <ul>
+
+    </ul>
+    <table>
+      <th> Test Number </th>
+      <th> Result </th>
+      <th> Count </th>
+    </table>
+  </div>
+</body>
+<script>window.$ = window.jQuery = require('jquery');</script>
+<script>
+  require('./renderer.js')
+</script>
+</html>
